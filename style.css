@@ -69,3 +69,19 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+
+/* .calendarContainer{
+  column-count: 3; 
+  grid-row: 9;
+}
+
+
+
+    <div class="input-group flex-nowrap">
+      <div class="input-group-prepend">
+        <span class="input-group-text">9AM</span>
+      </div>
+      <input id="user-input9" type="text" data-time="9" class="form-control">
+      <button><i class="fas fa-save save"></i></button>
+    </div> */
