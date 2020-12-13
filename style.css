@@ -1,6 +1,8 @@
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+  padding-bottom: 50px;
+  
+}
 
 
 body {
@@ -11,11 +13,9 @@ body {
 
 textarea{
   background: lightgray;
-  border: none;
+  border: black;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  border
   padding: 10px;
 }
 
@@ -29,6 +29,7 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+
 }
 
 .time-block{
@@ -64,7 +65,7 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
@@ -77,12 +78,14 @@ textarea{
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 
   0;
   bottom: 0;
   width: 100%;  
-  background-color: rgb(236, 235, 235);
-  color: white;
+  background-color:white);
+  color: black;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
