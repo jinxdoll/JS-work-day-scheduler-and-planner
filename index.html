@@ -18,124 +18,144 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    ></script>
     <title>Work Day Scheduler</title>
   </head>
 
 
-  <style>
-   
-
-  </style>
+  
 
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron jumbotron-fluid">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">     
-      
-      <!-- Timeblocks go here -->
-     <div class="calendar-container">
 
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">9:00 AM</span>
-          </div>
-          <input id="9:00" type="text" class="form-control" data-timeOfDay= "9:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">10:00 AM</span>
-          </div>
-          <input id="10:00" type="text" class="form-control" data-timeOfDay= "10:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">11:00 AM</span>
-          </div>
-          <input id="11:00" type="text" class="form-control" data-timeOfDay= "11:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">12:00 PM</span>
-          </div>
-          <input id="12:00" type="text" class="form-control" data-timeOfDay= "12:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">1:00 PM</span>
-          </div>
-          <input id="1:00" type="text" class="form-control" data-timeOfDay= "1:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">2:00 PM</span>
-          </div>
-          <input id="2:00" type="text" class="form-control" data-timeOfDay= "2:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">3:00 PM</span>
-          </div>
-          <input id="3:00" type="text" class="form-control" data-timeOfDay= "3:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">4:00 PM</span>
-          </div>
-          <input id="4:00" type="text" class="form-control" data-timeOfDay= "4:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-      
-       <div class="input-group flex-nowrap">
-        <div class="input-group-prepend">
-          <span class="input-group-text">5:00 PM</span>
-          </div>
-          <input id="5:00" type= "text" class="form-control" data-timeOfDay= "5:00">
-          <input class="btn btn-primary" type="submit" value="Submit">
-       </div>
-
-      
-      
-
-      
-         
-
-    
+    <div class="container container-fluid">     
 
 
 
-
-      
-       
-
-
-
-
-
-
-
-     
-
-
-     
+      <div id="0900hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 9:00 AM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
+
+
+
+
+      <div id="1000hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea">10:00 AM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1100hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea">11:00 AM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1200hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea">12:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1300hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 1:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1400hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 2:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1500hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 3:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1600hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 4:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+      <div id="1700hour" class="row time-block">
+        <div class="col-md-1 hour">
+          <span class="textarea"> 5:00 PM</span>
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+
+
+
+
+
+
+
+
+     
+
+
+
 
       
   
