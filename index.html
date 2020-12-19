@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css"/>
-    <script
-      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
-    <style>
-      html {
+  <style>
+    html {
       scroll-behavior: smooth;
-      }
+    }
+  </style>
 
-    </style>
-  
 
   <body>
 
-
+<!-- Main container -->
 
     <header class="jumbotron jumbotron-fluid">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -45,148 +33,139 @@
 
     <div class="container container-fluid">
       <div class="overflow-hidden">
-           
 
 
-   
 
-            <div id="0900-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 9:00 AM</span>
-              </div>
-              <textarea class="col-md-10 description">
+
+
+        <event id="0900-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 9:00 AM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1000-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea">10:00 AM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1000-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea">10:00 AM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1100-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea">11:00 AM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1100-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea">11:00 AM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1200-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea">12:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1200-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea">12:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1300-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 1:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1300-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 1:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1400-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 2:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1400-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 2:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1500-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 3:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1500-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 3:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1600-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 4:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1600-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 4:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
 
 
 
-            <div id="1700-hour" class="row time-block">
-              <div class="col-md-1 hour">
-                <span class="textarea"> 5:00 PM</span>
-              </div>
-              <textarea class="col-md-10 description">
+        <event id="1700-hour" class="row time-block">
+          <event class="col-md-1 hour">
+            <span class="textarea"> 5:00 PM</span>
+          </event>
+          <textarea class="col-md-10 description">
               </textarea>
-              <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-          </div>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </event>
 
-          <div>
+        <event>
 
-          </div>
-
-
-    </div>
-
-        
-    <footer class="footer"> <h1>Have a great day!</h1> 
-
-        </footer>
+        </div>
 
 
+      </div>
 
 
+      <footer class="footer">
+        <h1>Have a great day!</h1>
+
+      </footer>
 
 
+      <!-- CDN for moments -->
 
-      
-  
-
-
-
-
-
-
-        <!-- CDN for moments -->
-      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
       <script src="./script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
   </body>
+
 </html>
