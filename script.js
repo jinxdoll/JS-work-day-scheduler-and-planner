@@ -85,8 +85,12 @@ function getNewdate() {
 // ---------possible funtion for color coding time acoridng to CSS file
 
 function eventHourColor() {
-    userInput.each(function (i) {
-        // console.log($(this).attr("id"), i + 9);
+    userInput.each(function (i) { 
+
+
+        console.log("this is the color class for this time block at this current hour:", "" , userInput);
+
+
         if (i + 9 > hour) {
             $(this).addClass("future");
         }
@@ -98,36 +102,15 @@ function eventHourColor() {
             $(this).addClass("present");
             
         }
-
-
+     
     });
 
 
 };
 
 eventHourColor();
-//     if(nineHourEl === currentTimeBlock) { 
-//         return ("#present");
-//         };        
-//     if (nineHourEl > currentTimeBlock) { 
-//         return("#future"); 
-//      };         
+//  console.log("this is the color class for this time block at this current hour:", "" ,($(this).attr("id"), i + 9));
 
-// });
-
-
-// variables for hours of the work day
-// const hours = [
-//     "0900"
-//     "1000"
-//     "1100"
-//     "1200"
-//     "1300"
-//     "1400"
-//     "1500"
-//     "1600"
-//     "1700"
-// ];
 
 
 // const dayHours = document.querySelector(".hours")
