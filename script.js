@@ -43,6 +43,8 @@ console.log("this will dipaly the user's input for each event:", "", userInput);
 // Global variables
 // Hours of the day variables
 
+
+
 var nineHourEl = $("#0900-hour");
 var tenHourEl = $("#1000-hour");
 var elevenHourEl = $("#1100-hour");
@@ -52,6 +54,7 @@ var fourteenHourEl = $("#1400-hour");
 var fifteenHourEl = $("#1500-hour");
 var sixteenHourEl = $("#1600-hour");
 var seventeenHourEl = $("#1700-hour");
+
 
 
 // Global variables for current day - used for color coded time-block
@@ -85,10 +88,10 @@ function getNewdate() {
 // ---------possible funtion for color coding time acoridng to CSS file
 
 function eventHourColor() {
-    userInput.each(function (i) { 
+    userInput.each(function (i) {
 
 
-        console.log("this is the color class for this time block at this current hour:", "" , userInput);
+        // console.log("this is the color class for this time block at this current hour:", "", userInput);
 
 
         if (i + 9 > hour) {
@@ -96,13 +99,13 @@ function eventHourColor() {
         }
         if (i + 9 < hour) {
             $(this).addClass("past");
-            
-        } else { 
-            if (i + 9 === hour) 
-            $(this).addClass("present");
-            
+
+        } else {
+            if (i + 9 === hour)
+                $(this).addClass("present");
+
         }
-     
+
     });
 
 
@@ -123,15 +126,17 @@ eventHourColor();
 
 
 
-
+// ======================================Aimee need to create object oput of time elements. see example on chrome
 // console log button clicked
 
 
-$(".save-Btn").on("click", function () {
-    console.log("Save button click test for each HTMl elelment for the time-block rows:", "", save - Btn);
-    //    var nineHourEl =  $(this).parent().attr("time-block");
-    //    var currentevent = $(this).parent().find("textarea").val();
-    //    localStorage.setItem(elementTime, currNote);
+$(".saveBtn").on("click", function () {   
+   
+    var eventDesc =  $(this).siblings(".description").val();
+    var eventTime = $(this).parent().attr("id");
+ //    Saves event description and time to local storage
+    localStorage.setItem(eventDesc, eventTime);
+ 
 });
 
 // $(".time-block").each(function() {
