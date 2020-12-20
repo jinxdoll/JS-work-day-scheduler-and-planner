@@ -91,7 +91,7 @@ function eventHourColor() {
     userInput.each(function (i) {
 
 
-        // console.log("this is the color class for this time block at this current hour:", "", userInput);
+        console.log("this is the color class for this time block at this current hour:", "", userInput);
 
 
         if (i + 9 > hour) {
