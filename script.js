@@ -68,16 +68,16 @@ function savedEvent() {
 savedEvent()
 
 
-// function getsavedEvent() {
-//   var savedEvent = localStorage.getItem(".description")
+function getsavedEvent() {
+  var savedEvent = localStorage.getItem(".description")
     
 
-//     if (savedEvent){
-//         savedEvent=JSON.parse(savedEvent)
-//     }
+    if (savedEvent){
+        savedEvent=JSON.parse(savedEvent)
+    }
   
 
-// getEvent();
+getEvent();
 
 
-// }
+}
