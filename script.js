@@ -60,12 +60,12 @@ function eventHourColor() {
 eventHourColor();
 
 
-// function savedEvent() {
-//     var savedEvent = savedEvent.stringify(eventDesc ,eventTime)
-//     localStorage.setItem(".description", savedEvent);
-//   }
+function savedEvent() {
+    var savedEvent = savedEvent.stringify(eventDesc ,eventTime)
+    localStorage.setItem(".description", savedEvent);
+  }
 
-// savedEvent()
+savedEvent()
 
 
 // function getsavedEvent() {
