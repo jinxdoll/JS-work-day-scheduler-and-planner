@@ -8,4 +8,8 @@ This app use the [Moment.js](https://momentjs.com/) library to work with dates a
 
 
 
+Deployed Links:
+https://github.com/jinxdoll/JS-work-day-scheduler-and-planner.git
+https://jinxdoll.github.io/JS-work-day-scheduler-and-planner/
+
 
