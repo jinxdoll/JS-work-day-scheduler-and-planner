@@ -24,8 +24,17 @@ $(".saveBtn").on("click", function () {
   var eventDesc = $(this).siblings(".description").val();
   var eventTime = $(this).parent().attr("id");
   //    Saves event description and time to local storage
-  localStorage.setItem(eventDesc, eventTime);
+  localStorage.setItem(eventTime, eventDesc);
 });
+
+$(document).ready( function () {
+  $(".saveBtn").each( function () {
+    var eventDesc = $(this).siblings(".description");
+    var eventTime = $(this).parent().attr("id");
+   eventDesc.val(localStorage.getItem(eventTime));
+  })
+
+})
 
 // Global variable for events for each hour of the scheduler
 var userInput = $("textarea");
@@ -60,24 +69,24 @@ function eventHourColor() {
 eventHourColor();
 
 
-function savedEvent() {
-    var savedEvent = savedEvent.stringify(eventDesc ,eventTime)
-    localStorage.setItem(".description", savedEvent);
-  }
+// function savedEvent() {
+//     var savedEvent = savedEvent.stringify(eventDesc ,eventTime)
+//     localStorage.setItem(".description", savedEvent);
+//   }
 
-savedEvent()
+// savedEvent()
 
 
-function getsavedEvent() {
-  var savedEvent = localStorage.getItem(".description")
+// function getsavedEvent() {
+//   var savedEvent = localStorage.getItem(".description")
     
 
-    if (savedEvent){
-        savedEvent=JSON.parse(savedEvent)
-    }
+//     if (savedEvent){
+//         savedEvent=JSON.parse(savedEvent)
+//     }
   
 
-getEvent();
+// getEvent();
 
 
-}
+// }
