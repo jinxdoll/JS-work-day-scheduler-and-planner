@@ -11,4 +11,4 @@ Deployed Links:
 https://jinxdoll.github.io/JS-work-day-scheduler-and-planner/
 https://github.com/jinxdoll/js-Coding-Quiz-with-high-score-store.git
 
-<link rel="screenshot"><img src="Assets\screencapture-jinxdoll-github-io-JS-work-day-scheduler-and-planner-2021-01-12-17_44_11 (1).png" alt="work-day" /></a>.
+<img src="Assets\screencapture-jinxdoll-github-io-JS-work-day-scheduler-and-planner-2021-01-12-17_44_11 (1).png" alt="work-day"/>.
